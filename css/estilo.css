@@ -265,7 +265,7 @@ footer{
 
     /* productos*/
 .container__productos{
-    background-color: green;
+    background-color: white;
     border-radius:8px;
     border: 4px solid rgb(205, 164, 62);
     display: inline-block;
