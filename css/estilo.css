@@ -93,6 +93,13 @@ main{
         border-top: 1px solid white;
 
     }
+    .textocontrans{
+        color: rgb(205, 164, 62);
+    }
+    .textocontrans:hover{
+        color: white;
+        background-color: rgb(205, 164, 62);
+        transition: 1s;}
 
 /* FOOTER*/
 
