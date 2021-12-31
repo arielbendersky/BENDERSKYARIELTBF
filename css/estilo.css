@@ -1,0 +1,538 @@
+
+*{  
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;}
+
+/* HEADER*/
+header{
+    background-color: #222222;
+   
+    }
+ul{
+    border-top:0;
+    border-left: 0;
+    border-right: 0;
+}
+
+ul li{ 
+    display: inline-block;
+    padding: 7px;
+    }
+
+ul li a{
+    text-decoration: none;
+    color: rgb(205, 164, 62);
+    border-bottom: 0; border-left: 0;
+    border-right: 0;}
+
+ul li a:hover{
+    color: white;
+    cursor: pointer;
+    transition: color 1s;
+}
+
+ul li .menu-bar{
+    color: black; 
+    display: none;}
+
+nav{
+    display: inline;}
+.nav__search{
+    border: none;
+    color: white;
+    border-bottom: 1px solid rgb(205, 164, 62);
+    background-color:transparent;
+outline: 0;}
+
+
+header nav h1{
+    display: inline;
+    color: white;
+    font-family: monospace;
+    margin:75px;
+}
+
+.titulo__span{
+    color: rgb(205, 164, 62);
+    font-family: monospace;
+}
+
+.insta,.twitter,.facebook{
+    border-top: 0;
+    margin-left: 15px;
+}
+
+/*  MAIN*/
+main{
+    background-color: black;
+    width: 100%;}
+.main__div--index{
+    background-image: url(../images/fondohome.png);
+    background-size: cover;}
+
+
+    .buttom__home{
+        background-color: transparent;
+        color: white;
+        border-top: 1px solid rgb(205, 164, 62);
+        border-left: 0;
+        border-bottom: 0;
+        border-right: 0;
+        margin-top: 600px;
+        margin-left: 150px;
+        cursor: pointer;}
+    .buttom__home:hover{
+        background-color: transparent;
+        color: rgb(205, 164, 62);
+        border-top: 1px solid white;
+
+    }
+    .textocontrans{
+        color: rgb(205, 164, 62);
+    }
+    .textocontrans:hover{
+        color: white;
+        background-color: rgb(205, 164, 62);
+        transition: 1s;}
+/* FOOTER*/
+
+footer{ 
+    background-color:#222222;
+    color: rgb(205, 164, 62);
+    text-align: center;
+    border: 2px double black;
+    border-bottom: 0; 
+    border-left: 0;
+    border-right: 0; 
+    width: 100%;
+    height: 20%;
+}
+
+
+
+
+
+/*contacto*/
+.main__contacto{
+    background-color: black;
+    color: white;
+    padding: 0 1.5em;}
+
+.contacto{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+.titulo-contacto{
+    text-align: center;
+    font-size: 3em;}
+
+.container{
+    box-shadow: 0 0 15px 0 white ;
+}
+
+.container > *{
+    padding:1em;
+}
+.fantasy{
+    color: rgb(205, 164, 62);
+}
+
+.form{background-color: #222222;}
+
+.datos{ background-color: black;}
+.form form p {
+    margin: 0;
+    padding: 1em;}
+.form form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.form form .block{
+    grid-column: 1 / 3;
+}
+
+
+
+.form form textarea,
+.form form input,
+.form form button{
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgb(205, 164, 62);
+    width: 100%;
+    padding:.7em;
+    color: white;
+    outline: 0;
+}
+.form form button{
+    background: rgb(205, 164, 62);
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+    color: black;
+    cursor: pointer;
+}
+
+.form form button:hover,
+.form form button:focus{
+    color: white;
+    background-color: goldenrod;
+    transition: background-color 1s ease-out;
+    outline: 0;
+
+}
+.h3contacto{
+    color: rgb(205, 164, 62);
+}
+.datos h4,
+.datos ul li,
+.datos p{
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+.datos ul{
+    list-style: none;
+    padding: 0;
+}
+
+.datos ul li{
+    padding: .3em;
+}
+
+@media (min-width:700px){
+    .main__contacto{padding: 0 4rem;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+/* nosotros*/
+.div1__nosotros{
+    background-image: url(../images/nosotros.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.nosotros__texto{
+    background-image: url(../images/nosotros.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 635px;
+    float: right;
+}
+
+.nosotros__texto--titulo{
+    font-size: 40px;
+    padding-top: 40px;
+    text-align: center;
+    color: rgb(205, 164, 62);}
+
+.nosotros__texto--parrafo{
+    font-size: 25px;
+    color: white;}
+.mapa{border: 7px double rgb(205, 164, 62);}
+
+.div__mision,.div__vision,.div__historia,.div__ubicacion{
+    border-top: 7px double rgb(205, 164, 62);
+    color: rgb(205, 164, 62);
+    font-size: 15px;
+    display: inline-block;
+    width: 50%;
+    margin-left: 15px;
+    }
+    
+.p__mision,.p__vision,.p__historia{
+    color: white;
+    margin: 7px;
+    margin-bottom: 0;
+    width: 50%;
+    margin-left: 15px;
+    }
+
+    /* productos*/
+.container__productos{
+    background-color: white;
+    border-radius:8px;
+    border: 4px solid rgb(205, 164, 62);
+    display: inline-block;
+    margin-left: 55px;
+    margin-top: 20px;
+    width: 400px;
+    height: 400px;}
+.productos__seccion{display: flex;
+    flex-wrap: wrap;}
+
+.texto__productos{
+    display: inline-block; 
+    font-size: 20px;
+    margin-left: 25px;}
+
+.precio{color: darkblue;}
+.botton{
+    background-color: rgb(205, 164, 62);
+    color: black;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    padding: 3px;}
+.botton:hover{
+    color: white;
+    background-color: goldenrod;
+    cursor: pointer;
+}
+
+.rizen,.i7{
+    height: 200px; 
+    margin-bottom: 15px; 
+    margin-left: 30px; 
+    margin-top: 10px;}
+
+.productos{
+    width: 100%;
+     display: inline-block;
+    height: 100%;}
+
+.main__div--productos{
+    background-image: url(../images/fondoproductos.png);
+    background-size: cover;
+    display: flex;}
+.buttom__productos{
+    color: black;
+    border-bottom: 0;
+    border-right: 0;
+    border-left: 0;
+    margin:20px;
+    margin-top: 700px;
+    margin-left: 700px;
+    font-size: 25px;}
+
+    /* sucursales*/
+    .main__div--sucursales{
+        background-image: url(../images/fondosucursales.png);
+        background-size: cover;
+        height: 100%;}
+    
+    .buttom__sucursales{    
+        background-color: rgb(205, 164, 62);
+        color: black;
+        border: 5px double rgb(205, 164, 62);
+        margin:20px;
+        margin-top: 600px;
+        margin-left: 700px;
+        font-size: 20px;}
+    .texto__sucursales{
+        color: white;
+    }
+
+
+
+    @media only screen and (max-width:600px){
+        body{
+            height: 667px;
+            }
+        header{
+                background-color: black;
+              
+            }
+            
+        
+        ul li a{ display: none;}
+    
+            
+        ul li .menu-bar{color: rgb(205, 164, 62); 
+            display: flex;}
+        
+        .main__div--productos{
+            background-image: url(../images/fondoproductosmobile.png);
+            background-size: cover;
+            display: flex;
+        width: 100%;
+        height: 100%;}
+        
+        footer{
+            height: auto;
+        }
+        
+        ul li .insta{display: none;}
+        ul li .facebook{display: none;}
+        ul li .twitter{display: none;}
+        ul li input {display: none;}
+        
+        
+        
+        /*home*/
+        .main__div--index{    
+            background-image: url(../images/fondohomemobile.png);
+            background-size: cover;
+            height: 100%;
+        }
+        .buttom__home{
+            background-color: transparent;
+            color: white;
+            border-top: 1px solid rgb(205, 164, 62);
+            border-left: 0;
+            border-bottom: 0;
+            border-right: 0;
+            margin-top: 600px;
+            margin-left: 150px;
+            cursor: pointer;}
+        .buttom__home:hover{
+            background-color: transparent;
+            color: rgb(205, 164, 62);
+            border-top: 1px solid white;
+
+        }
+        
+        
+        /*productos*/ 
+        .buttom__productos{
+        margin:400px;
+        background-color: rgb(205, 164, 62);
+        color: white;
+        margin-bottom:150px ;
+        width: 0;
+        height:0;}
+
+        .container__productos{
+            background-color: white;
+            border-radius:8px;
+            border: 4px solid rgb(205, 164, 62);
+            display: inline-block;
+            margin-left: 55px;
+            margin-top: 20px;
+            width: 250px;
+            height: 275px;}
+        
+        .rizen,.i7{
+            height: 100px; 
+            margin-bottom: 15px; 
+            margin-left: 30px; 
+            margin-top: 10px;}
+        .texto__productos{
+        display: inline-block; 
+        font-size: 15px;
+        margin-left: 25px;}
+
+        .botton{
+            background-color: rgb(205, 164, 62);
+            color: white;
+            border: none;
+            font-size: 15px;}
+            
+        
+        }
+
+/*tablet*/
+        @media only screen and (max-width:1400px){
+            body{
+                height: auto;
+                }
+            header{
+                    background-color: black;
+                  
+                }
+                
+            
+            ul li a{ display: none;}
+        
+                
+            ul li .menu-bar{color: rgb(205, 164, 62); 
+                display: flex;}
+            
+            .main__div--productos{
+                background-image: url(../images/fondoproductosmobile.png);
+                background-size: cover;
+                display: flex;
+            width: 100%;
+            height: 100%;}
+            
+            footer{
+                height: auto;
+            }
+            
+            ul li .insta{display: none;}
+            ul li .facebook{display: none;}
+            ul li .twitter{display: none;}
+            ul li input {display: none;}
+            
+            
+            
+            /*home*/
+            .main__div--index{    
+                background-image: url(../images/fondohomemobile.png);
+                background-size: cover;
+                height: 100%;
+            }
+            .buttom__home{
+                background-color: transparent;
+                color: white;
+                border-top: 1px solid rgb(205, 164, 62);
+                border-left: 0;
+                border-bottom: 0;
+                border-right: 0;
+                margin-top: 600px;
+                margin-left: 150px;
+                cursor: pointer;}
+            .buttom__home:hover{
+                background-color: transparent;
+                color: rgb(205, 164, 62);
+                border-top: 1px solid white;
+    
+            }
+            
+            
+            /*productos*/ 
+            .buttom__productos{
+            margin:400px;
+            background-color: rgb(205, 164, 62);
+            color: white;
+            margin-bottom:150px ;
+            width: 0;
+            height:0;}
+    
+            .container__productos{
+                background-color: white;
+                border-radius:8px;
+                border: 4px solid rgb(205, 164, 62);
+                display: inline-block;
+                margin-left: 55px;
+                margin-top: 20px;
+                width: 250px;
+                height: 275px;}
+            
+            .rizen,.i7{
+                height: 100px; 
+                margin-bottom: 15px; 
+                margin-left: 30px; 
+                margin-top: 10px;}
+            .texto__productos{
+            display: inline-block; 
+            font-size: 15px;
+            margin-left: 25px;}
+    
+            .botton{
+                background-color: rgb(205, 164, 62);
+                color: white;
+                border: none;
+                font-size: 15px;}
+                
+            
+            }
+        
+
+            /*boostrap*/
+            
