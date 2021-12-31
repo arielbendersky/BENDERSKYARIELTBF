@@ -268,18 +268,18 @@ footer{
 .container__productos{
     background-color: white;
     border-radius:8px;
-    border: 4px solid rgb(205, 164, 62);
+    border: 4px solid #cda43e;
     display: inline-block;
     margin-left: 55px;
     margin-top: 20px;
-    width: 400px;
-    height: 400px;}
+    width: 300px;
+    height: 300px;}
 .productos__seccion{display: flex;
     flex-wrap: wrap;}
 
 .texto__productos{
     display: inline-block; 
-    font-size: 20px;
+    font-size: 15px;
     margin-left: 25px;}
 
 .precio{color: darkblue;}
@@ -288,7 +288,7 @@ footer{
     color: black;
     border: none;
     border-radius: 8px;
-    font-size: 18px;
+    font-size: 15px;
     padding: 3px;}
 .botton:hover{
     color: white;
@@ -297,7 +297,7 @@ footer{
 }
 
 .rizen,.i7{
-    height: 200px; 
+    height: 150px; 
     margin-bottom: 15px; 
     margin-left: 30px; 
     margin-top: 10px;}
@@ -322,22 +322,49 @@ footer{
     font-size: 25px;}
 
     /* sucursales*/
-    .main__div--sucursales{
-        background-image: url(../images/fondosucursales.png);
-        background-size: cover;
-        height: 100%;}
-    
-    .buttom__sucursales{    
-        background-color: rgb(205, 164, 62);
-        color: black;
-        border: 5px double rgb(205, 164, 62);
-        margin:20px;
-        margin-top: 600px;
-        margin-left: 700px;
-        font-size: 20px;}
-    .texto__sucursales{
+    .main__sucu{
+        background-color: black;
         color: white;
+        padding: 0 1.5em;}
+    
+    .sucursales{
+        max-width: 1170px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1.5em;
     }
+    
+    .titulo-sucursales{
+        text-align: center;
+        font-size: 3em;}
+    
+    .container{
+        box-shadow: 0 0 15px 0 white ;
+    }
+    
+    .container > *{
+        padding:1em;
+    }
+    .fantasy{
+        color: rgb(205, 164, 62);
+    }
+    
+    .form2{background-color: #222222;}
+    
+    .datos{ background-color: black;}
+    .form2 form p {
+        margin: 0;
+        padding: 1em;}
+    .form2 form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .form2 form .block{
+        grid-column: 1 / 3;
+    }
+
+
 
 
 
@@ -436,7 +463,6 @@ footer{
             
         
         }
-
 /*tablet*/
         @media only screen and (max-width:1400px){
             body{
