@@ -125,7 +125,22 @@ footer{
 
 .titulo-contacto{
     text-align: center;
-    font-size: 3em;}
+    animation-name: cambiodecolor;
+    animation-duration:5s;
+    font-size: 40px;}
+
+@keyframes cambiodecolor{
+from{color: rgb(205, 164, 62);
+    font-size: 25px;
+    text-align: center;
+
+}
+to{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+}
 
 .container{
     box-shadow: 0 0 15px 0 white ;
@@ -266,8 +281,30 @@ footer{
     width: 300px;
     height: 300px;}
 .productos__seccion{display: flex;
-    flex-wrap: wrap;}
+    flex-wrap: wrap;
+    animation-name: cambiobackground;
+    animation-duration: 5s;
+    animation-iteration-count: 5;
+background-color: goldenrod;}
 
+@keyframes cambiobackground{
+
+    20%{
+        background-color: white;
+    }
+    40%{
+        background-color: #222222 ;
+    }
+    60%{
+        background-color: goldenrod ;
+    }
+    80%{
+        background-color: rgb(205, 164, 62) ;
+    }
+    100%{
+        background-color: black;
+    }
+}
 .texto__productos{
     display: inline-block; 
     font-size: 15px;
