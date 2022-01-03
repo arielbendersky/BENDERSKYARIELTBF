@@ -104,7 +104,7 @@ main{
         background-color: goldenrod;
         color: white;
     }
-
+    
     .buttom__home{
         background-color: transparent;
         color: white;
@@ -293,7 +293,7 @@ footer{
     margin-left: 55px;
     margin-top: 20px;
     width: 300px;
-    height: 300px;}
+    height: 400px;}
 .productos__seccion{display: flex;
     flex-wrap: wrap;
     animation-name: cambiobackground;
@@ -304,10 +304,10 @@ background-color: goldenrod;}
 @keyframes cambiobackground{
 
     20%{
-        background-color: white;
+        background-color: goldenrod;
     }
     40%{
-        background-color: #222222 ;
+        background-color: rgb(205, 164, 62) ;
     }
     60%{
         background-color: goldenrod ;
@@ -316,12 +316,12 @@ background-color: goldenrod;}
         background-color: rgb(205, 164, 62) ;
     }
     100%{
-        background-color: black;
+        background-color: goldenrod;
     }
 }
 .texto__productos{
     display: inline-block; 
-    font-size: 15px;
+    font-size: 25px;
     margin-left: 25px;}
 
 .precio{color: darkblue;}
@@ -330,7 +330,7 @@ background-color: goldenrod;}
     color: black;
     border: none;
     border-radius: 8px;
-    font-size: 15px;
+    font-size: 20px;
     padding: 3px;}
 .botton:hover{
     color: white;
