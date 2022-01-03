@@ -383,12 +383,9 @@ footer{
             }
             
         
-        ul li a{ display: none;}
-    
+        ul li a{ font-size: 15px;}
+
             
-        ul li .menu-bar{color: rgb(205, 164, 62); 
-            display: flex;}
-        
         .main__div--productos{
             background-image: url(../images/fondoproductosmobile.png);
             background-size: cover;
@@ -479,11 +476,7 @@ footer{
                 }
                 
             
-            ul li a{ display: none;}
-        
-                
-            ul li .menu-bar{color: rgb(205, 164, 62); 
-                display: flex;}
+            ul li a{ font-size: 10px;}
             
             .main__div--productos{
                 background-image: url(../images/fondoproductosmobile.png);
