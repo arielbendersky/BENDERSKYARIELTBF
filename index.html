@@ -13,22 +13,49 @@
 </head>
 <body>
         <header> 
-            <nav>
-                <ul>
-                    <li><a href="index.html"><h1 class="header__titulo"> THE GAMER <span class="titulo__span"> FANTASY  </span> </h1></a></li>
-                    <li><a href="#">INICIO</a></li>
-                    <li><a href="pages/productos.html">PRODUCTOS</a></li>
-                    <li><a href="pages/sucusales.html">SUCURSALES</a></li>
-                    <li><a href="pages/sobrenosotros.html">NOSOTROS</a></li>
-                    <li><a href="pages/contacto.html">CONTACTO</a></li>
-                    <li><a href="https://www.instagram.com/?hl=es-la" class="fab fa-instagram insta"></i></a></li>
-                    <li><a href="https://www.facebook.com/" class="fab fa-facebook facebook"></i></a></li>
-                    <li><a href="https://twitter.com/?lang=es" class="fab fa-twitter twitter"></i></a></li>
-                    <li><input type="search" class="nav__search" size="50" placeholder="Buscar"></li>
-                    <li><i href="#" class="fas fa-bars menu-bar"></i></li>
-                </ul>
-            </nav>
-    
+        <!--nav bar inicio-->
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">THE GAMER <span class="fantasy">FANTASY</span></a>
+            <button class="navbar-toggler fas fa-bars" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="pages/productos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">PRODUCTOS
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="pages/productos.html">Procesadores</a></li>
+                    <li><a class="dropdown-item" href="pages/productos.html">Consolas</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="pages/productos.html">Accesorios</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pages/sucusales.html">SUCURSALES</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="pages/sobrenosotros.html">NOSOTROS</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="pages/contacto.html">CONTACTO</a>
+                </li>
+                <li><a href="https://www.instagram.com/?hl=es-la" class="fab fa-instagram insta nav-link"></i></a></li>
+                <li><a href="https://www.facebook.com/" class="fab fa-facebook facebook nav-link"></i></a></li>
+                <li><a href="https://twitter.com/?lang=es" class="fab fa-twitter twitter nav-link"></i></a></li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Buscar" size="40" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">BUSCAR</button>
+              </form>
+            </div>
+          </div>
+        </nav>
         </header>
     <main>
       <!-- carrusel -->

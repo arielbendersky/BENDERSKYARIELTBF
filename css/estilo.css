@@ -10,65 +10,32 @@ body{
     width: 100%;}
 
 /* HEADER*/
-header{
-    background-color: #222222;
-    height: 35px;
-   
-    }
-ul{
-    border-top:0;
-    border-left: 0;
-    border-right: 0;
-}
+ul li a {color: white;}
+a.nav-link{color: rgb(205, 164, 62);
+padding-left: 35px;}
 
-ul li{ 
-    display: inline-block;
-    padding: 7px;
-    }
+a.nav-link:hover{color: white;
+cursor: pointer;}
 
-ul li a{
-    text-decoration: none;
-    color: rgb(205, 164, 62);
-    border-bottom: 0; border-left: 0;
-    border-right: 0;}
+.fantasy{color: rgb(205, 164, 62);}
 
-ul li a:hover{
+
+a.navbar-brand{color: white;
+margin-right: 100px;
+font-size: 20px;}
+.navbar-toggler{color: white;}
+
+header nav{background-color: #222222;}
+button.btn.btn-outline-success{border: 3px solid rgb(205, 164, 62);
+color: rgb(205, 164, 62);}
+
+button.btn.btn-outline-success:hover{
+    border:none;
     color: white;
-    cursor: pointer;
-    transition: color 1s;
-}
+    background-color: rgb(205, 164, 62);}
 
-ul li .menu-bar{
-    color: black; 
-    display: none;}
-
-nav{
-    display: inline;}
-.nav__search{
-    border: none;
-    color: white;
-    border-bottom: 1px solid rgb(205, 164, 62);
-    background-color:transparent;
-outline: 0;}
-
-
-header nav h1{
-    display: inline;
-    color: white;
-    font-family: monospace;
-    margin:75px;
-    font-size: 16px;
-}
-
-.titulo__span{
-    color: rgb(205, 164, 62);
-    font-family: monospace;
-}
-
-.insta,.twitter,.facebook{
-    border-top: 0;
-    margin-left: 15px;
-}
+.insta,.twitter,.facebook{font-size: 20px;
+margin-left: 30px;}
 
 /*  HOME*/
 main{
@@ -293,7 +260,8 @@ footer{
     margin-left: 55px;
     margin-top: 20px;
     width: 300px;
-    height: 400px;}
+    height: 430px;
+box-shadow: 0px 0px 20px black;}
 .productos__seccion{display: flex;
     flex-wrap: wrap;
     animation-name: cambiobackground;
@@ -339,7 +307,7 @@ background-color: goldenrod;}
 }
 
 .rizen,.i7{
-    height: 150px; 
+    height: 175px; 
     margin-bottom: 15px; 
     margin-left: 30px; 
     margin-top: 10px;}
