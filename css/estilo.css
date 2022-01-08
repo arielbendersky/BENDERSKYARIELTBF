@@ -44,6 +44,7 @@ button.btn.btn-outline-success:hover{
 .form-control{
     background-color: transparent;
     border: none;
+    border-radius: 0;
     border-bottom: 3px solid rgb(205, 164, 62);
 }
 
@@ -111,7 +112,7 @@ footer{
     border-left: 0;
     border-right: 0; 
     width: 100%;
-    height: 20%;
+    height: auto;
 }
 
 
@@ -285,7 +286,7 @@ footer{
 .container__productos{
     background-color: white;
     border-radius:8px;
-    border: 5px outset #cda43e;
+    border: 7px outset #cda43e;
     display: inline-block;
     margin-left: 55px;
     margin-top: 20px;
@@ -294,18 +295,40 @@ footer{
 box-shadow: 0px 0px 20px black;}
 .productos__seccion{display: flex;
     flex-wrap: wrap;
-background-color:black}
+background-color:black;
+animation-name: cambiodefondo;
+animation-duration: 3s;
+animation-iteration-count: 1500000;
+}
+@keyframes cambiodefondo{
+
+20%{
+    background-color:  white;
+}
+40%{
+    background-color:  #222222 ;
+}
+60%{
+    background-color:   goldenrod ;
+}
+80%{
+    background-color:  rgb(205, 164, 62) ;
+}
+100%{
+    background-color:  yellow;
+}
+}
 
 
 
 
 .texto__productos{
     display: inline-block; 
-    font-size: 20px;
+    font-size: 22px;
     margin-left: 25px;}
 
 .precio{color: darkblue;
-font-size: 30px;}
+font-size: 25px;}
 .botton{
     background-color: rgb(205, 164, 62);
     color: black;
@@ -419,7 +442,7 @@ font-size: 30px;}
         }
         
         
-        
+        .card{margin-left: 50px;}
         
         /*home*/
         .main__div--index{    
@@ -452,7 +475,7 @@ font-size: 30px;}
         }
 
         .precio{color: darkblue;
-            font-size: 15px;}
+            font-size: 12px;}
 
         .container__productos{
             background-color: white;
@@ -466,7 +489,7 @@ font-size: 30px;}
         
         .rizen,.i7{
             height: 100px; 
-            margin-bottom: 15px; 
+            margin-bottom: 10px; 
             margin-left: 30px; 
             margin-top: 10px;}
         .texto__productos{
