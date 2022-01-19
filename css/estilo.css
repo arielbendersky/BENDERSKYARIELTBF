@@ -663,7 +663,7 @@ footer {
     font-size: 10px;
   }
   .main__div--productos {
-    background-image: url(../images/fondoproductosmobile.png);
+    background-image: url(../images/fondoproductos.png);
     background-size: cover;
     display: -webkit-box;
     display: -ms-flexbox;
