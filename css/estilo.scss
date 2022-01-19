@@ -108,6 +108,7 @@ $color7:yellow;
     background-color: $background;
     }
   
+
   
   .tituloofertas {
     @include ofertas ($color3, 0px 0px 10px $color2, center,$color1)
@@ -511,7 +512,6 @@ $color7:yellow;
   
     .card {
       margin-left: 50px;
-      width: 5000px;
     }
   
     /*home*/
