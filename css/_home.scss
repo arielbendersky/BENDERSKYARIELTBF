@@ -1,0 +1,68 @@
+main {
+    background-color: $color3;
+    width: 100%;
+  }
+  
+  .main__div--index {
+    background-image: url(../images/fondohome.png);
+    background-size: cover;
+  }
+  
+  .card {
+    display: inline-block;
+    border: 7px solid $color1;
+    align-items: center;
+    justify-content: center;
+    height: 330px;
+    width: 272px ;
+    
+  }
+  
+  .card-img-top {
+    height: 130px;
+    width: 70%;
+  }
+
+  @mixin ofertas($color,$textshadow,$textalign,$background){
+    color: $color;
+    text-shadow: $textshadow;
+    text-align: $textalign;
+    background-color: $background;
+    }
+  
+
+  
+  .tituloofertas {
+    @include ofertas ($color3, 0px 0px 10px $color2, center,$color1)
+
+  }
+  
+  .btn-primary {
+    background-color:$color1 ;
+    border: none;
+    color: $color3;
+    font-size: 10px;
+  }
+  
+  .btn-primary:hover {
+    background-color: $color4;
+    color: $color2;
+  }
+  
+  .buttom__home {
+    border: 1px solid $color1;
+    color: $color2;
+    border-top: 1px solid $color1;
+    border-left: 0;
+    border-bottom: 0;
+    border-right: 0;
+    margin-top: 600px;
+    margin-left: 150px;
+    cursor: pointer;
+  }
+  
+  .buttom__home:hover {
+    background-color: transparent;
+    color: $color1;
+    border-top: 1px solid $color2;
+  }

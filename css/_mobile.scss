@@ -1,0 +1,152 @@
+@media only screen and (max-width: 600px) {
+    body {
+      height: 667px;
+    }
+  
+    header {
+      background-color: $color3;
+    }
+  
+    .main__div--productos {
+      background-image: url(../images/fondoproductosmobile.png);
+      background-size: cover;
+      display: flex;
+      width: 100%;
+      height: 730px;
+      border-bottom: 2px solid $color1;
+    }
+  
+    footer {
+      height: auto;
+    }
+  
+    .card {
+      width: 100%;
+      border-radius: 0;
+      border: 1px solid $color1;
+      height: 350px;
+    }
+
+    .card-img-top{
+      height: 150px;
+      margin-top: 8px;
+      margin-left: 80px;
+      width: 150px;
+    }
+
+    .tituloofertas{
+      margin: 0;
+      padding: 0;
+    }
+  
+    /*home*/
+    .main__div--index {
+      background-image: url(../images/fondohomemobile.png);
+      background-size: cover;
+      height: 100%;
+    }
+  
+    .buttom__home {
+      background-color: transparent;
+      color: $color2;
+      border-top: 1px solid $color1;
+      border-left: 0;
+      border-bottom: 0;
+      border-right: 0;
+      margin-top: 600px;
+      margin-left: 150px;
+      cursor: pointer;
+    }
+  
+    .buttom__home:hover {
+      background-color: transparent;
+      color: $color1;
+      border-top: 1px solid $color2;
+    }
+  
+    /*productos*/
+    .buttom__productos {
+      padding: 0;
+      margin: 0;
+    }
+  
+
+    .productos__seccion{
+      margin: 0;
+      padding: 0;
+    }
+    .precio {
+      color: $color5;
+      font-size: 12px;
+    }
+  
+    .container__productos {
+      background-color: $color2;
+      border: 1px solid $color1;
+      border-radius: 0;
+      display: inline-block;
+      width: 100%;
+      height: 200px;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .rizen, .i7 {
+      height: 100px;
+      margin-bottom: 10px;
+      margin-left: 30px;
+      margin-top: 10px;
+    }
+  
+    .texto__productos {
+      display: inline-block;
+      font-size: 10px;
+      margin-left: 25px;
+      margin-top: 11px;
+    }
+  
+    .botton {
+      background-color: $color1;
+      color: $color2;
+      border: none;
+      font-size: 15px;
+    }
+  
+    /*contacto*/
+    .conteiner {
+      margin: 2em;
+    }
+  
+    .div.form {
+      width: auto;
+    }
+      .main__contacto {
+        padding: 0 4rem;
+        width: 100%;
+        width: 100%;
+    }
+  
+    .conteiner {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      width: 100%;
+    }
+  
+    .conteiner > * {
+      padding: 2em;
+    }
+
+  /*nosotros*/
+  .main__div--nosotros {
+    background-image: url(../images/fondohistoriamobile.png);
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    height: 695px;
+  }
+
+  .buttom__nosotros {
+    padding: 0;
+    margin: 0;
+  }
+}
