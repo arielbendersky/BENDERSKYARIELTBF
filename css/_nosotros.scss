@@ -1,26 +1,44 @@
-.fondohistoria {
-    width: 100%;
-    height: 600px;
-  }
+.mainhistoria{
+  margin:0;
+  padding: 0;
+}
+
+  .cartas .card{
+    display: inline-block;
+    margin: 15px;
+    padding: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    border: none; 
+    height: 230px;
+    border: 3px solid $color1;
+    transition: 1s;
+}
+
+.cartas .card:hover{
+  height: 400px;
+  text-align: left;
+}
+.cartas{
+  display: flex;
+  margin: 15px;
+  margin-left: 110px;
+}
+
+.cartas .card .card-img-top{
+  filter: grayscale(50%);
+  cursor: pointer;
+  width: 100%;
+  height: 175px;
+}
+
+.cartas .card .card-img-top:hover{
+  filter: none;
   
-  .jumbotron h1 {
-    background-color: $color4;
-    color: $color3;
-    text-shadow: 0 0 10px $color2;
-    text-align: center;
-  }
-  
-  .jumbotron {
-    padding: 3px;
-    margin: 3px;
-  }
-  
-  .main__div--nosotros {
-    background-image: url(../images/fondohistoria.png);
-    background-size: cover;
-    display: flex;
-  }
-  
+}
+
+
+
   .buttom__nosotros {
     color: $color3;
     border-bottom: 0;
@@ -36,3 +54,59 @@
     color: $color4;
   }
   
+  .card-body .card-title{
+    color: $color1;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 2px solid $color1;  
+  }
+    .card-body .card-text{
+      color: $color3;
+    }
+
+    .fotopersonas{
+      border-radius: 50%;
+      height: 180px;
+      width: 160px;
+      background-size: cover;
+      border: 2px solid $color2;
+      cursor: pointer;
+      transition: 1s;
+      margin-top: 35px;
+  }
+  
+  .fotopersonas:hover{
+      height: 220px;
+      width: 200px;
+      border: 5px solid $color1;
+  }
+
+  .puestos{text-align: center;
+  height: 1000px;
+margin-top: 140px;
+background-color: $color6;
+border-top: 3px solid $color4;}
+
+.textoper{
+  color:$color2;
+}
+
+
+.textoper2{
+  color: $color1;
+}
+
+
+.textoper3{
+  color: gray;
+  
+  cursor: pointer;
+}
+
+.textoper3:hover{
+  color: white;
+}
+
+.titulonoso{
+  color: whitesmoke;
+}

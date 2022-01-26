@@ -59,7 +59,6 @@ button.btn.btn-outline-success:hover {
 .insta, .twitter, .facebook {
   font-size: 5px;
   margin: 0;
-  color: red;
 }
 
 .form-control {
@@ -73,26 +72,179 @@ button.btn.btn-outline-success:hover {
 /*fin heade*/
 /* FOOTER*/
 footer {
-  background-color: #222222;
-  color: #cda43e;
-  text-align: center;
-  border: 2px double black;
-  border-bottom: 0;
-  border-left: 0;
-  border-right: 0;
+  bottom: 0;
+  left: 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   width: 100%;
-  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: black;
+  color: white;
+}
+
+.copyright-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: #222222;
+}
+
+.copyright {
+  font-size: 12px;
+  opacity: 0.7;
+  font-weight: 400;
+  padding: 10px 0;
+}
+
+.footer-menus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 40%;
+}
+
+.footer-container {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  padding: 3rem 6rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer-content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .website-logo {
+  margin-bottom: 1.2rem;
+  font-size: calc(1vw+20px);
+}
+
+.footer-info, .menu-item-footer {
+  margin: 0.2rem 0;
+  opacity: 0.7;
+  color: white;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-right: 5px;
+}
+
+.menu-item-footer:hover {
+  opacity: 1;
+  color: #cda43e;
+}
+
+.menu-title {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}
+
+.social-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30px;
+  width: 100%;
+}
+
+.social-link {
+  height: 100%;
+  width: 30px;
+  margin-right: 1rem;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: #cda43e;
+}
+
+.social-container:hover {
+  opacity: 0.7;
 }
 
 /*fin footer*/
+/*wpp*/
+.btn-wsp {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  right: 30px;
+  bottom: 30px;
+  background-color: #0df053;
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+.btn-wsp:hover {
+  text-decoration: none;
+  color: #0df053;
+  background-color: white;
+}
+
+/*fin wpp*/
 main {
   background-color: black;
   width: 100%;
-}
-
-.main__div--index {
-  background-image: url(../images/fondohome.png);
-  background-size: cover;
 }
 
 .card {
@@ -183,7 +335,7 @@ main {
   font-size: 25px;
 }
 
-.botton {
+.bottonpro {
   background-color: #cda43e;
   color: black;
   border: none;
@@ -192,7 +344,7 @@ main {
   padding: 1px;
 }
 
-.botton:hover {
+.bottonpro:hover {
   color: white;
   background-color: goldenrod;
   cursor: pointer;
@@ -202,30 +354,13 @@ main {
   height: 175px;
   margin-bottom: 100px;
   margin-left: 10px;
-  -webkit-filter: grayscale(50%);
-          filter: grayscale(50%);
   cursor: pointer;
-}
-
-.rizen:hover, .i7:hover, .i7:hover {
-  -webkit-filter: none;
-          filter: none;
 }
 
 .productos {
   width: 100%;
   display: inline-block;
   height: 100%;
-}
-
-.main__div--productos {
-  background-image: url(../images/fondoproductos.png);
-  background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 650px;
 }
 
 .buttom__productos {
@@ -235,7 +370,7 @@ main {
   border-left: 0;
   margin: 20px;
   margin-top: 700px;
-  margin-left: 700px;
+  margin-left: 1700px;
   font-size: 25px;
 }
 
@@ -297,29 +432,48 @@ main {
   grid-column: 1/3;
 }
 
-.fondohistoria {
-  width: 100%;
-  height: 600px;
+.mainhistoria {
+  margin: 0;
+  padding: 0;
 }
 
-.jumbotron h1 {
-  background-color: goldenrod;
-  color: black;
-  text-shadow: 0 0 10px white;
-  text-align: center;
+.cartas .card {
+  display: inline-block;
+  margin: 15px;
+  padding: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  border: none;
+  height: 230px;
+  border: 3px solid #cda43e;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
-.jumbotron {
-  padding: 3px;
-  margin: 3px;
+.cartas .card:hover {
+  height: 400px;
+  text-align: left;
 }
 
-.main__div--nosotros {
-  background-image: url(../images/fondohistoria.png);
-  background-size: cover;
+.cartas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 15px;
+  margin-left: 110px;
+}
+
+.cartas .card .card-img-top {
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
+  cursor: pointer;
+  width: 100%;
+  height: 175px;
+}
+
+.cartas .card .card-img-top:hover {
+  -webkit-filter: none;
+          filter: none;
 }
 
 .buttom__nosotros {
@@ -335,6 +489,64 @@ main {
 
 .jumbotron p {
   color: goldenrod;
+}
+
+.card-body .card-title {
+  color: #cda43e;
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 2px solid #cda43e;
+}
+
+.card-body .card-text {
+  color: black;
+}
+
+.fotopersonas {
+  border-radius: 50%;
+  height: 180px;
+  width: 160px;
+  background-size: cover;
+  border: 2px solid white;
+  cursor: pointer;
+  -webkit-transition: 1s;
+  transition: 1s;
+  margin-top: 35px;
+}
+
+.fotopersonas:hover {
+  height: 220px;
+  width: 200px;
+  border: 5px solid #cda43e;
+}
+
+.puestos {
+  text-align: center;
+  height: 1000px;
+  margin-top: 140px;
+  background-color: #222222;
+  border-top: 3px solid goldenrod;
+}
+
+.textoper {
+  color: white;
+}
+
+.textoper2 {
+  color: #cda43e;
+}
+
+.textoper3 {
+  color: gray;
+  cursor: pointer;
+}
+
+.textoper3:hover {
+  color: white;
+}
+
+.titulonoso {
+  color: whitesmoke;
 }
 
 .main__contacto {
@@ -515,10 +727,13 @@ main {
     display: flex;
     width: 100%;
     height: 730px;
-    border-bottom: 2px solid #cda43e;
   }
-  footer {
-    height: auto;
+  .fondoprodumobile {
+    width: 100%;
+    height: 730px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .card {
     width: 100%;
@@ -589,11 +804,11 @@ main {
   }
   .texto__productos {
     display: inline-block;
-    font-size: 10px;
+    font-size: 12px;
     margin-left: 25px;
     margin-top: 11px;
   }
-  .botton {
+  .bottonpro {
     background-color: #cda43e;
     color: white;
     border: none;
@@ -611,6 +826,55 @@ main {
     width: 100%;
     width: 100%;
   }
+  /*nosotros*/
+  .fondonosomobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 695px;
+  }
+  .buttom__nosotros {
+    padding: 0;
+    margin: 0;
+  }
+  .fondoprodu {
+    display: none;
+  }
+  .fondonoso {
+    display: none;
+  }
+  .cartas .card {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    border: none;
+    height: 210px;
+    width: 100%;
+    border: 3px solid #cda43e;
+  }
+  .cartas {
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .cartas .card .card-img-top {
+    -webkit-filter: grayscale(50%);
+            filter: grayscale(50%);
+    cursor: pointer;
+    height: 150px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+  .cartas .card .card-img-top:hover {
+    -webkit-filter: none;
+            filter: none;
+  }
+}
+
+@media only screen and (min-width: 700px) {
   .conteiner {
     display: -ms-grid;
     display: grid;
@@ -621,19 +885,68 @@ main {
   .conteiner > * {
     padding: 2em;
   }
-  /*nosotros*/
-  .main__div--nosotros {
-    background-image: url(../images/fondohistoriamobile.png);
-    background-size: cover;
+  .fondoprodumobile {
+    display: none;
+  }
+  .fondonosomobile {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 2rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-content-container {
+    width: 100%;
+    padding: 2rem 0;
+    border-bottom: 1px solid #2a2a2a;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-content-container:nth-of-type(1) {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .footer-content-container:nth-of-type(3) {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  .footer-menus {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
-    height: 695px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    border-bottom: 1px solid #2a2a2a;
   }
-  .buttom__nosotros {
-    padding: 0;
-    margin: 0;
+  .footer-menus .footer-content-container:nth-of-type(1) {
+    width: 45%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    border-bottom: none;
+  }
+  .footer-menus .footer-content-container:nth-of-type(2) {
+    width: 45%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    border-bottom: none;
   }
 }
 /*# sourceMappingURL=estilo.css.map */
