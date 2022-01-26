@@ -826,11 +826,6 @@ main {
     padding: 0;
     /*nosotros*/
   }
-  .contacto .insta, .contacto .twitter, .contacto .facebook {
-    font-size: 5px;
-    margin: 0;
-    font-size: 15px;
-  }
   .contacto .fondonosomobile {
     display: -webkit-box;
     display: -ms-flexbox;
