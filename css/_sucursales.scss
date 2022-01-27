@@ -1,52 +1,8 @@
-.main__sucu {
-    background-color: $color3;
-    color: $color2;
-    padding: 0 1.5em;
-  }
-  
-  .h3sucu {
-    color: $color1;
-    text-shadow: 1px 1px $color2;
-  }
-  
-  .sucursales {
-    max-width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1.5em;
-  }
-  
-  .titulo-sucursales {
-    text-align: center;
-    font-size: 3em;
-  }
-  
-  .container {
-    box-shadow: 0 0 15px 0 $color2;
-  }
-  
-  .container > * {
-    padding: 1em;
-  }
-  
-  .fantasy {
-    color: $color1;
-  }
-  
-  .form2 {
-    background-color: $color6;
-  }
-  
-  .form2 form p {
-    margin: 0;
-    padding: 1em;
-  }
-  
-  .form2 form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  
-  .form2 form .block {
-    grid-column: 1/3;
-  }
+.sucursales{
+  border: 2px solid $color1;
+}
+
+.sucursalestexto{
+  color: $color1;
+  display: inline-block;
+}
