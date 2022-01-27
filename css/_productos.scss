@@ -2,11 +2,11 @@
     background-color: $color2;
     border-radius: 8px;
     border: 7px outset $color1;
-    display: inline-block;
+    display: flex;
     margin-left: 55px;
     margin-top: 20px;
-    width: 1100px;
-    height: 230px;
+    width: 300px;
+    height: 435px;
     box-shadow: 0px 0px 20px $color3;
   }
   
@@ -18,7 +18,8 @@
   .texto__productos {
     display: inline-block;
     font-size: 22px;
-    margin-left: 25px;
+    margin-left: 5px;
+    border-top: 3px solid $color1;
   }
   
   .precio {
@@ -30,9 +31,10 @@
     background-color: $color1;
     color: $color3;
     border: none;
-    border-radius: 8px;
+    border-radius: 3px;
     font-size: 20px;
     padding: 1px;
+    text-align: center;
   }
   
   .bottonpro:hover {
@@ -43,7 +45,8 @@
   
   .rizen{
     height: 175px;
-    margin-bottom: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     margin-left: 10px;
     cursor: pointer;
   }
@@ -69,3 +72,5 @@
     margin-top: 700px;
     margin-left: 1700px;
     font-size: 25px;}
+
+      
