@@ -745,6 +745,15 @@ main {
   header {
     background-color: black;
   }
+  .main__div--productos {
+    background-image: url(../images/fondoproductosmobile.png);
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 730px;
+  }
   .fondoprodumobile {
     width: 100%;
     height: 730px;
@@ -769,6 +778,11 @@ main {
     padding: 0;
   }
   /*home*/
+  .main__div--index {
+    background-image: url(../images/fondohomemobile.png);
+    background-size: cover;
+    height: 100%;
+  }
   .buttom__home {
     background-color: transparent;
     color: white;
