@@ -109,6 +109,7 @@
       font-size: 12px;
       margin-left: 25px;
       margin-top: 11px;
+      border: none;
     }
   
     .bottonpro {
@@ -119,7 +120,11 @@
     }
   
     /*contacto*/
+<<<<<<< HEAD
 .form{
+=======
+    .div,.form{
+>>>>>>> 252d4cb
       width: 100%;
       margin: 0;
       padding: 0;
@@ -128,6 +133,15 @@
       margin-left: 0;
       margin-right: 0;
       padding:0;
+<<<<<<< HEAD
+=======
+    }
+    .insta, .twitter, .facebook {
+      font-size: 20px;
+      margin: 0;
+    }
+  
+>>>>>>> 252d4cb
 
 
   /*nosotros*/
