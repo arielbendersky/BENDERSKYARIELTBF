@@ -842,26 +842,10 @@ main {
     font-size: 15px;
   }
   /*contacto*/
-<<<<<<< HEAD
   .form {
     width: 100%;
     margin: 0;
     padding: 0;
-=======
-  .div, .form {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  .contacto {
-    margin-left: 0;
-    margin-right: 0;
-    padding: 0;
-  }
-  .insta, .twitter, .facebook {
-    font-size: 20px;
-    margin: 0;
->>>>>>> 252d4cb
   }
   .contacto {
     margin-left: 0;
