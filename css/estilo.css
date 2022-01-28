@@ -393,58 +393,6 @@ main {
   height: 38px;
   -webkit-transition: 1s;
   transition: 1s;
-  -webkit-animation-name: cambiofondo;
-          animation-name: cambiofondo;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-iteration-count: 150;
-          animation-iteration-count: 150;
-}
-
-@-webkit-keyframes cambiofondo {
-  20% {
-    background-color: #cda43e;
-    border: 5px outset white;
-  }
-  40% {
-    background-color: goldenrod;
-    border: 5px outset black;
-  }
-  60% {
-    background-color: #cda43e;
-    border: 5px outset white;
-  }
-  80% {
-    background-color: goldenrod;
-    border: 5px outset black;
-  }
-  100% {
-    background-color: #cda43e;
-    border: 5px outset white;
-  }
-}
-
-@keyframes cambiofondo {
-  20% {
-    background-color: #cda43e;
-    border: 5px outset white;
-  }
-  40% {
-    background-color: goldenrod;
-    border: 5px outset black;
-  }
-  60% {
-    background-color: #cda43e;
-    border: 5px outset white;
-  }
-  80% {
-    background-color: goldenrod;
-    border: 5px outset black;
-  }
-  100% {
-    background-color: #cda43e;
-    border: 5px outset white;
-  }
 }
 
 .sucursalestexto:hover {
@@ -456,6 +404,7 @@ main {
   color: white;
   text-align: center;
   background-color: #222222;
+  text-shadow: 0px 0px 5px solid white;
 }
 
 .mainhistoria {
@@ -470,15 +419,10 @@ main {
   margin-bottom: 0;
   margin-left: 0;
   border: none;
-  height: 230px;
+  height: 400px;
   border: 3px solid #cda43e;
   -webkit-transition: 1s;
   transition: 1s;
-}
-
-.cartas .card:hover {
-  height: 400px;
-  text-align: left;
 }
 
 .cartas {
@@ -879,7 +823,8 @@ main {
     padding: 0;
     margin: 0;
     border: none;
-    height: 210px;
+    height: 355px;
+    margin-bottom: 10px;
     width: 100%;
     border: 3px solid #cda43e;
   }
