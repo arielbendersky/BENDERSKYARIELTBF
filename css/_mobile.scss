@@ -30,6 +30,8 @@
       width: 100%;
       border-radius: 0;
       border: 1px solid $color1;
+      border-bottom: 1px solid $color3;
+      border-top: none;
       height: 350px;
     }
 

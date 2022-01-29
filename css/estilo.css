@@ -431,6 +431,11 @@ main {
   display: flex;
   margin: 15px;
   margin-left: 110px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  justify-self: center;
 }
 
 .cartas .card .card-img-top {
@@ -709,6 +714,8 @@ main {
     width: 100%;
     border-radius: 0;
     border: 1px solid #cda43e;
+    border-bottom: 1px solid black;
+    border-top: none;
     height: 350px;
   }
   .card-img-top {
