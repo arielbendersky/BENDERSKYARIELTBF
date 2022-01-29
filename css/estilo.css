@@ -380,11 +380,11 @@ main {
 }
 
 .sucursalestexto {
-  color: #222222;
-  background-color: #cda43e;
+  color: #cda43e;
+  background-color: black;
   display: inline-block;
   border-radius: 50px;
-  border: 5px outset white;
+  border: 5px outset #cda43e;
   margin: 5px;
   padding: 5px;
   cursor: pointer;
@@ -393,6 +393,16 @@ main {
   height: 38px;
   -webkit-transition: 1s;
   transition: 1s;
+}
+
+.sucursalestexto span {
+  color: transparent;
+}
+
+.sucursalestexto:hover span {
+  color: #cda43e;
+  -webkit-transition: 3s;
+  transition: 3s;
 }
 
 .sucursalestexto:hover {
@@ -499,7 +509,7 @@ main {
   text-align: center;
   height: 1000px;
   margin-top: 140px;
-  background-color: #222222;
+  background-color: black;
   border-top: 3px solid goldenrod;
 }
 
