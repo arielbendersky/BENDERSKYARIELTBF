@@ -22,7 +22,10 @@
     }
 
 
-
+    .seccionactual{
+      border: none;
+      color: $color2 !important;
+    }
   
 
   
@@ -102,7 +105,7 @@
   
     .rizen, .i7 {
       height: 100px;
-margin: 0;
+      margin: 0;
       width: 100px;
     }
   
@@ -181,7 +184,7 @@ margin: 0;
   text-align: center;
 }
 
-.cartas .card .card-img-top{
+.cartas .card .card-img-top-noso{
   filter: grayscale(50%);
   cursor: pointer;
   height: 150px;
@@ -191,7 +194,7 @@ margin: 0;
 
 }
 
-.cartas .card .card-img-top:hover{
+.cartas .card .card-img-top-noso:hover{
   filter: none;
   
 }

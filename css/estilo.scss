@@ -80,6 +80,11 @@ $colorwsp:#0df053;
     border-bottom: 3px solid $color1;
     font-size: 11px;
   }
+  .seccionactual{
+    color: $color2;
+    cursor: pointer;
+    border-bottom: 2px solid $color1;
+  }
   /*fin heade*/
   /* FOOTER*/
   footer{

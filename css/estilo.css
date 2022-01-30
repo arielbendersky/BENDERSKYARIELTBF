@@ -69,6 +69,12 @@ button.btn.btn-outline-success:hover {
   font-size: 11px;
 }
 
+.seccionactual {
+  color: white;
+  cursor: pointer;
+  border-bottom: 2px solid #cda43e;
+}
+
 /*fin heade*/
 /* FOOTER*/
 footer {
@@ -421,6 +427,56 @@ main {
   text-shadow: 0px 0px 5px solid white;
 }
 
+.titulo-sucursales {
+  display: inline-block;
+  -webkit-animation-name: cambiodeborde;
+          animation-name: cambiodeborde;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  border-radius: 50px;
+  padding: 1em;
+}
+
+@-webkit-keyframes cambiodeborde {
+  25% {
+    border: none;
+    border-left: 3px outset #cda43e;
+  }
+  50% {
+    border: none;
+    border-top: 3px outset #cda43e;
+  }
+  75% {
+    border: none;
+    border-right: 3px outset #cda43e;
+  }
+  100% {
+    border: none;
+    border-bottom: 3px outset #cda43e;
+  }
+}
+
+@keyframes cambiodeborde {
+  25% {
+    border: none;
+    border-left: 3px outset #cda43e;
+  }
+  50% {
+    border: none;
+    border-top: 3px outset #cda43e;
+  }
+  75% {
+    border: none;
+    border-right: 3px outset #cda43e;
+  }
+  100% {
+    border: none;
+    border-bottom: 3px outset #cda43e;
+  }
+}
+
 .mainhistoria {
   margin: 0;
   padding: 0;
@@ -452,15 +508,7 @@ main {
   justify-self: center;
 }
 
-.cartas .card .card-img-top {
-  -webkit-filter: grayscale(50%);
-          filter: grayscale(50%);
-  cursor: pointer;
-  width: 100%;
-  height: 175px;
-}
-
-.cartas .card .card-img-top:hover {
+.cartas .card .card-img-top-noso:hover {
   -webkit-filter: none;
           filter: none;
 }
@@ -536,6 +584,14 @@ main {
 
 .titulonoso {
   color: whitesmoke;
+}
+
+.cartas .card .card-img-top-noso {
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
+  cursor: pointer;
+  width: 100%;
+  height: 175px;
 }
 
 .main__contacto {
@@ -719,6 +775,10 @@ main {
     display: -ms-flexbox;
     display: flex;
   }
+  .seccionactual {
+    border: none;
+    color: white !important;
+  }
   .card {
     width: 100%;
     border-radius: 0;
@@ -792,7 +852,7 @@ main {
     display: inline-block;
     font-size: 12px;
     margin-left: 25px;
-    margin-top: 7px;
+    margin-top: 0px;
     border: none;
   }
   .bottonpro {
@@ -857,7 +917,7 @@ main {
     padding: 0;
     text-align: center;
   }
-  .cartas .card .card-img-top {
+  .cartas .card .card-img-top-noso {
     -webkit-filter: grayscale(50%);
             filter: grayscale(50%);
     cursor: pointer;
@@ -866,7 +926,7 @@ main {
     text-align: center;
     margin: 0;
   }
-  .cartas .card .card-img-top:hover {
+  .cartas .card .card-img-top-noso:hover {
     -webkit-filter: none;
             filter: none;
   }
