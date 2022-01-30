@@ -86,7 +86,7 @@
     }
     .precio {
       color: $color5;
-      font-size: 12px;
+      font-size: 25px;
     }
   
     .container__productos {
@@ -102,14 +102,14 @@
   
     .rizen, .i7 {
       height: 100px;
-      margin-bottom: 10px;
-      margin-left: 30px;
-      margin-top: 10px;
+      margin: 0;
+      width: 100px;
+      margin-left: 15px;
     }
   
     .texto__productos {
       display: inline-block;
-      font-size: 12px;
+      font-size: 18px;
       margin-left: 25px;
       margin-top: 11px;
       border: none;
@@ -132,6 +132,11 @@
       margin-left: 0;
       margin-right: 0;
       padding:0;
+    }
+
+    .h3contacto{
+      margin-left: 10px;
+      margin-top: 10px;
     }
     .insta, .twitter, .facebook {
       font-size: 20px;

@@ -345,7 +345,7 @@ main {
   color: black;
   border: none;
   border-radius: 3px;
-  font-size: 20px;
+  font-size: 25px;
   padding: 1px;
   text-align: center;
 }
@@ -771,7 +771,7 @@ main {
   }
   .precio {
     color: darkblue;
-    font-size: 12px;
+    font-size: 25px;
   }
   .container__productos {
     background-color: white;
@@ -785,13 +785,13 @@ main {
   }
   .rizen, .i7, .i7 {
     height: 100px;
-    margin-bottom: 10px;
-    margin-left: 30px;
-    margin-top: 10px;
+    margin: 0;
+    width: 100px;
+    margin-left: 15px;
   }
   .texto__productos {
     display: inline-block;
-    font-size: 12px;
+    font-size: 18px;
     margin-left: 25px;
     margin-top: 11px;
     border: none;
@@ -812,6 +812,10 @@ main {
     margin-left: 0;
     margin-right: 0;
     padding: 0;
+  }
+  .h3contacto {
+    margin-left: 10px;
+    margin-top: 10px;
   }
   .insta, .twitter, .facebook {
     font-size: 20px;
