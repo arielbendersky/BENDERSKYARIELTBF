@@ -11,13 +11,10 @@
     padding: 1.5em;
   }
   
-  .titulo-contacto {
+  .titulo-contacto{
     text-align: center;
-    animation-name: cambiodecolor;
-    animation-duration: 5s;
-    font-size: 40px;
   }
-  
+
   .conteiner {
     box-shadow: 0 0 15px 0 $color2;
     animation-name: cambiosombra;
