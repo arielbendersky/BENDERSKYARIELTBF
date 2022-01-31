@@ -193,6 +193,16 @@ $todo:100%;
   margin: $cero;
 
 }
+/*sucursales*/
+.imagen__sucursales{
+  display: none;
+}
+.imagen__sucursales__mobile{
+  width: $todo;
+  height: 500px;
+}
+
+
 
 .cartas .card .card-img-top-noso:hover{
   filter: none;
@@ -222,6 +232,9 @@ $todo:100%;
 .fondonosomobile{
   display: none;
 }
+.imagen__sucursales__mobile{
+  display: none;
+}
 }
 
 @media (max-width: 768px){
@@ -229,6 +242,7 @@ $todo:100%;
     padding: 2rem;
     flex-direction: column;
   }
+
   .footer-content-container{
     width: $todo;
     padding: 2rem $cero;
@@ -265,6 +279,11 @@ $todo:100%;
     align-items: flex-start;
     border-bottom: none;
   }
+
+  .imagen__sucursales{
+    display: none;
+  }
+  
 }
   
 
