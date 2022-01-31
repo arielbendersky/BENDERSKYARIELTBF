@@ -5,16 +5,7 @@
   
     header {
       background-color: $color3;
-    }
-  
-    .main__div--productos {
-      background-image: url(../images/fondoproductosmobile.png);
-      background-size: cover;
-      display: flex;
-      width: 100%;
-      height: 730px;
-    }
-    
+    }  
     .fondoprodumobile{
       width: 100%;
       height: 730px;
@@ -52,12 +43,6 @@
     }
   
     /*home*/
-    .main__div--index {
-      background-image: url(../images/fondohomemobile.png);
-      background-size: cover;
-      height: 100%;
-    }
-  
     .buttom__home {
       background-color: transparent;
       color: $color2;
@@ -89,7 +74,7 @@
     }
     .precio {
       color: $color5;
-      font-size: 12px;
+      font-size: 20px;
     }
   
     .container__productos {
@@ -111,9 +96,9 @@
   
     .texto__productos {
       display: inline-block;
-      font-size: 12px;
+      font-size: 15px;
       margin-left: 25px;
-      margin-top: 0px;
+      margin-top: 25px;
       border: none;
     }
   
