@@ -1,3 +1,17 @@
+//colores
+$color1:#cda43e;
+$color2:white;
+$color3:black;
+$color4:goldenrod;
+$color5:darkblue;
+$color6:#222222;
+$color7:yellow;
+$colorwsp:#0df053;
+
+
+/*medidas*/
+$cero:0;
+$todo:100%;
 
 .sucursalestexto{
   color: $color1;
@@ -26,7 +40,7 @@
 
 .sucursalestexto:hover{
   height: 100px;
-  border-radius: 0;
+  border-radius:$cero;
   }
 
 

@@ -1,3 +1,18 @@
+//colores
+$color1:#cda43e;
+$color2:white;
+$color3:black;
+$color4:goldenrod;
+$color5:darkblue;
+$color6:#222222;
+$color7:yellow;
+$colorwsp:#0df053;
+
+
+/*medidas*/
+$cero:0;
+$todo:100%;
+
 @media only screen and (max-width: 600px) {
     body {
       height: 667px;
@@ -7,7 +22,7 @@
       background-color: $color3;
     }  
     .fondoprodumobile{
-      width: 100%;
+      width: $todo;
       height: 730px;
       display: flex;
     }
@@ -21,8 +36,8 @@
 
   
     .card {
-      width: 100%;
-      border-radius: 0;
+      width: $todo;
+      border-radius: $cero;
       border: 1px solid $color1;
       border-bottom: 1px solid $color3;
       border-top: none;
@@ -38,8 +53,8 @@
     }
 
     .tituloofertas{
-      margin: 0;
-      padding: 0;
+      margin: $cero;
+      padding: $cero;
     }
   
     /*home*/
@@ -47,9 +62,9 @@
       background-color: transparent;
       color: $color2;
       border-top: 1px solid $color1;
-      border-left: 0;
-      border-bottom: 0;
-      border-right: 0;
+      border-left: $cero;
+      border-bottom: $cero;
+      border-right: $cero;
       margin-top: 600px;
       margin-left: 150px;
       cursor: pointer;
@@ -63,14 +78,14 @@
   
     /*productos*/
     .buttom__productos {
-      padding: 0;
-      margin: 0;
+      padding: $cero;
+      margin: $cero;
     }
   
 
     .productos__seccion{
-      margin: 0;
-      padding: 0;
+      margin: $cero;
+      padding: $cero;
     }
     .precio {
       color: $color5;
@@ -80,17 +95,17 @@
     .container__productos {
       background-color: $color2;
       border: 1px solid $color1;
-      border-radius: 0;
+      border-radius: $cero;
       display: inline-block;
-      width: 100%;
+      width: $todo;
       height: 200px;
-      margin: 0;
-      padding: 0;
+      margin: $cero;
+      padding: $cero;
     }
   
     .rizen, .i7 {
       height: 100px;
-      margin: 0;
+      margin: $cero;
       width: 100px;
     }
   
@@ -111,14 +126,14 @@
   
     /*contacto*/
     .div,.form{
-      width: 100%;
-      margin: 0;
-      padding: 0;
+      width: $todo;
+      margin: $cero;
+      padding: $cero;
   }
   .contacto {
-      margin-left: 0;
-      margin-right: 0;
-      padding:0;
+      margin-left: $cero;
+      margin-right: $cero;
+      padding:$cero;
     }
 
     .h3contacto{
@@ -127,7 +142,7 @@
     }
     .insta, .twitter, .facebook {
       font-size: 20px;
-      margin: 0;
+      margin: $cero;
     }
     
     .main__contacto{
@@ -137,13 +152,13 @@
   /*nosotros*/
   .fondonosomobile {
     display: flex;
-    width: 100%;
+    width: $todo;
     height: 695px;
   }
 
   .buttom__nosotros {
-    padding: 0;
-    margin: 0;
+    padding: $cero;
+    margin: $cero;
   }
 
   .fondoprodu{
@@ -154,18 +169,18 @@
   }
   .cartas .card{
     display: inline-block;
-    padding: 0;
-    margin: 0;
+    padding: $cero;
+    margin: $cero;
     border: none; 
     height: 355px;
     margin-bottom: 10px;
-    width: 100%;
+    width: $todo;
     border: 3px solid $color1;
 }
 .cartas{
   display: block;
-  margin: 0;
-  padding: 0;
+  margin: $cero;
+  padding: $cero;
   text-align: center;
 }
 
@@ -173,9 +188,9 @@
   filter: grayscale(50%);
   cursor: pointer;
   height: 150px;
-  width:100%;
+  width:$todo;
   text-align: center;
-  margin: 0;
+  margin: $cero;
 
 }
 
@@ -194,7 +209,7 @@
 .conteiner {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  width: 100%;
+  width: $todo;
 }
 
 .conteiner > * {
@@ -215,8 +230,8 @@
     flex-direction: column;
   }
   .footer-content-container{
-    width: 100%;
-    padding: 2rem 0;
+    width: $todo;
+    padding: 2rem $cero;
     border-bottom: 1px solid #2a2a2a;
     justify-content: center;
     align-items: center;
@@ -228,11 +243,11 @@
 
   .footer-content-container:nth-of-type(3){
     border-bottom: none;
-    padding-bottom: 0;
+    padding-bottom: $cero;
   }
 
   .footer-menus{
-    width: 100%;
+    width: $todo;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;

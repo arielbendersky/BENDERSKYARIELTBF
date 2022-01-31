@@ -1,3 +1,18 @@
+//colores
+$color1:#cda43e;
+$color2:white;
+$color3:black;
+$color4:goldenrod;
+$color5:darkblue;
+$color6:#222222;
+$color7:yellow;
+$colorwsp:#0df053;
+
+
+/*medidas*/
+$cero:0;
+$todo:100%;
+
 .main__contacto {
     background-color: $color3;
     color: $color2;
@@ -56,7 +71,7 @@
   }
   
   .form form p {
-    margin: 0;
+    margin: $cero;
     padding: 1em;
   }
   
@@ -75,15 +90,15 @@
     background: none;
     border: none;
     border-bottom: 1px solid $color1;
-    width: 100%;
+    width: $todo;
     padding: 0.7em;
     color: $color2;
-    outline: 0;
+    outline: $cero;
   }
   
   .form form button {
     background:$color1;
-    border: 0;
+    border: $cero;
     text-transform: uppercase;
     padding: 1em;
     color: $color3;
@@ -95,7 +110,7 @@
     color: $color2;
     background-color: $color4;
     transition: background-color 1s ease-out;
-    outline: 0;
+    outline: $cero;
   }
   
   .h3contacto {
@@ -106,12 +121,12 @@
   .datos ul li,
   .datos p {
     text-align: center;
-    margin: 0 0 1rem 0;
+    margin: $cero $cero 1rem $cero;
   }
   
   .datos ul {
     list-style: none;
-    padding: 0;
+    padding: $cero;
   }
   
   .datos ul li {

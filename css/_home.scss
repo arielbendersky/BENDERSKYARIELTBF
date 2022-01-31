@@ -1,6 +1,20 @@
+//colores
+$color1:#cda43e;
+$color2:white;
+$color3:black;
+$color4:goldenrod;
+$color5:darkblue;
+$color6:#222222;
+$color7:yellow;
+$colorwsp:#0df053;
+
+
+/*medidas*/
+$cero:0;
+$todo:100%;
 main {
     background-color: $color3;
-    width: 100%;
+    width: $todo;
   }
   .card {
     display: inline-block;
@@ -49,9 +63,9 @@ main {
     border: 1px solid $color1;
     color: $color2;
     border-top: 1px solid $color1;
-    border-left: 0;
-    border-bottom: 0;
-    border-right: 0;
+    border-left:$cero;
+    border-bottom: $cero;
+    border-right: $cero;
     margin-top: 600px;
     margin-left: 150px;
     cursor: pointer;

@@ -1,3 +1,18 @@
+//colores
+$color1:#cda43e;
+$color2:white;
+$color3:black;
+$color4:goldenrod;
+$color5:darkblue;
+$color6:#222222;
+$color7:yellow;
+$colorwsp:#0df053;
+
+
+/*medidas*/
+$cero:0;
+$todo:100%;
+
 .container__productos {
     background-color: $color2;
     border-radius: 8px;
@@ -60,16 +75,16 @@
   
   
   .productos {
-    width: 100%;
+    width: $todo;
     display: inline-block;
-    height: 100%;
+    height: $todo;
   }
   
   .buttom__productos {
     color: $color3;
-    border-bottom: 0;
-    border-right: 0;
-    border-left: 0;
+    border-bottom: $cero;
+    border-right: $cero;
+    border-left: $cero;
     margin: 20px;
     margin-top: 700px;
     margin-left: 1700px;
