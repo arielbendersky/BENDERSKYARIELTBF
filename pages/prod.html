@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <script src="https://kit.fontawesome.com/a5b51f47bf.js" crossorigin="anonymous"></script>
+    
+</head>
+<body class="bodyprodu">
+    <header>
+        <!--nav bar inicio-->
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">THE GAMER <span class="fantasy">FANTASY</span></a>
+            <button class="navbar-toggler fas fa-bars" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link seccionactual" href="#">PRODUCTOS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="sucusales.html">SUCURSALES</a>
+                </li>
+    
+                <li class="nav-item">
+                  <a class="nav-link" href="sobrenosotros.html">NOSOTROS</a>
+                </li>
+    
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">CONTACTO</a>
+                </li>
+              </ul>
+              <div class="carrito">
+                <img onmouseover="showCart(this)" class="cart" src="../images/cart.png" alt="">
+                <p class="count-product">0</p>
+            </div>
+            <div class="cart-products" id="products-id">
+                <p class="close-btn" onclick="closeBtn()">X</p>
+                <h3>Carrito</h3>
+                <div class="card-items">
+                     <div class="item">
+                        <img src="" alt="">
+                        <div class="item-content">
+                            <h5>name of product name of product name of product</h5>
+                            <h5 class="cart-price">0$</h5>
+                            <h6>Cantidad: 0</h6>
+                        </div>
+                        <span>X</span>
+                    </div>
+    
+                    <div class="item">
+                        <img src="../images/" alt="">
+                        <div class="item-content">
+                            <h5></h5>
+                            <h5 class="cart-price">0$</h5>
+                            <h6>Cantidad: 0</h6>
+                        </div>
+                        <span class="delete-product" data-id="">X</span>
+                    </div>
+                </div>
+                <h2>Total: <strong class="price-total">0</strong> $</h2>
+            </div>
+        </div>
+      </header>
+  
+    <div class="fondoprodu" data-aos="fade-right">
+        <img class="fondoprodu" src="../images/fondoproductos.png" width="100%" height="750px" alt="productos">
+        </div>
+        <div class="fondoprodumobile">
+          <img class="fondoprodumobile" src="../images/fondoproductosmobile.png" alt="fondo">
+      </div>
+    <section class="container fondosectionprodu">
+        <div class="products">
+            <div class="carts">
+                <div>
+                    <img src="../images/rizen.jpg" alt="">
+                    <p><span>45900</span>$</p>
+                </div>
+                <p class="title">Procesador AMD RYZEN 7 3700X</p>
+                <a href="" data-id="1" class="btn-add-cart">AGREGAR AL CARRITO</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="../images/corei7.jpg" alt="">
+                    <p><span>34800</span>$</p>
+                </div>
+                <p class="title">Procesador Intel Core i7 9700F</p>
+                <a href="" class="btn-add-cart" data-id="2">AGREGAR AL CARRITO</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="../images/ryzen5.jpg" alt="">
+                    <p><span>29900</span>$</p>
+                </div>
+                <p class="title"> Procesador AMD Ryzen 5 1600</p>
+                <a href="" data-id="3" class="btn-add-cart">AGREGAR AL CARRITO</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="../images/gabinete1.jpg" alt="">
+                    <p><span>6500</span>$</p>
+                </div>
+                <p class="title"> Gabinete Kolink Void ARGB ATX</p>
+                <a href="" data-id="4" class="btn-add-cart">AGREGAR AL CARRITO</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="../images/gabinete2.jpg" alt="">
+                    <p><span>50000</span>$</p>
+                </div>
+                <p class="title"> Gabinete ASUS ROG STRIX Helios</p>
+                <a href="" data-id="5" class="btn-add-cart">AGREGAR AL CARRITO</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="../images/gabinete3.jpg" alt="">
+                    <p><span>11000</span>$</p>
+                </div>
+                <p class="title"> Gabinete Kolink Phalanx V2154</p>
+                <a href="" data-id="6" class="btn-add-cart">AGREGAR AL CARRITO</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="../images/mouse1.jpg" alt="">
+                    <p><span>6000</span>$</p>
+                </div>
+                <p class="title"> Mouse Glorious Model D Minus</p>
+                <a href="" data-id="7" class="btn-add-cart">AGREGAR AL CARRITO</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="../images/mouse2.jpg" alt="">
+                    <p><span>6500</span>$</p>
+                </div>
+                <p class="title"> Mouse Glorious Model D Minus</p>
+                <a href="" data-id="8" class="btn-add-cart">AGREGAR AL CARRITO</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="../images/mouse3.jpg" alt="">
+                    <p><span>5500</span>$</p>
+                </div>
+                <p class="title"> Mouse ASUS ROG STRIX Evolve</p>
+                <a href="" data-id="9" class="btn-add-cart">AGREGAR AL CARRITO</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="../images/play5.jpg" alt="">
+                    <p><span>270000</span>$</p>
+                </div>
+                <p class="title"> PlayStation 5 pro 825GB white</p>
+                <a href="" data-id="10" class="btn-add-cart">AGREGAR AL CARRITO</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="../images/nintendo.jpg" alt="">
+                    <p><span>100000</span>$</p>
+                </div>
+                <p class="title"> xbox microsoft serie s 825GB blanca</p>
+                <a href="" data-id="11" class="btn-add-cart">AGREGAR AL CARRITO</a>
+            </div>
+            <div class="carts">
+              <div>
+                  <img src="../images/nintendo.jpg" alt="">
+                  <p><span>75500</span>$</p>
+              </div>
+              <p class="title"> Nintendo Switch 32GB rojo neon</p>
+              <a href="" data-id="11" class="btn-add-cart">AGREGAR AL CARRITO</a>
+          </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+          <div class="footer-content-container">
+            <h3>THE GAMER <span class="fantasy">FANTASY</span></h3>
+            <span>1138725280</span>
+            <span>www.tgf/reclamos.com</span>
+          </div>
+          <div class="footer-menus">
+            <div class="footer-content-container">
+              <span class="menu-title">Menu</span>
+              <a href="../index.html" class="menu-item-footer">Home</a>
+              <a href="#" class="menu-item-footer">Productos</a>
+              <a href="pages/sucusales.html" class="menu-item-footer">Sucursales</a>
+              <a href="pages/sobrenosotros.html" class="menu-item-footer">Nosotros</a>
+              <a href="pages/contacto.html" class="menu-item-footer">Contacto</a>
+            </div>
+    
+            <div class="footer-menus">
+              <div class="footer-content-container">
+                <span class="menu-title">Legal</span>
+                <a href="" class="menu-item-footer">Politica de seguridad</a>
+                <a href="" class="menu-item-footer">cookies</a>
+                <a href="" class="menu-item-footer">Terminos & condiciones</a>
+              </div>
+    
+              <div class="footer-content-container">
+                <span class="menu-title">Seguinos</span>
+                <div class="social-container">
+                  <a href="https://www.instagram.com/ariibendersky/" class="social-link fab fa-instagram"></a>
+                  <a href="https://www.facebook.com/ariel.bendersky" class="social-link fab fa-facebook"></a>
+                  <a href="https://twitter.com/ariibendersky" class="social-link fab fa-twitter"></a>
+                </div>
+              </div>
+            </div>
+    
+      </footer>
+
+    <script>
+        function showCart(x){
+            document.getElementById("products-id").style.display = "block";
+        }
+        function closeBtn(){
+             document.getElementById("products-id").style.display = "none";
+        }
+
+    </script>
+    <script src="../script/js.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+</body>
+</html>
