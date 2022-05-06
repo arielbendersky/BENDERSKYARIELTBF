@@ -166,6 +166,14 @@ function clearHtml(){
 }*/
 //variables
 //variables
+Swal.fire({
+    icon: 'warning',
+    title: "A partir de $20.000 el envio es GRATIS",
+  })
+
+
+
+
 let allContainerCart = document.querySelector('.products');
 let containerBuyCart = document.querySelector('.card-items');
 let priceTotal = document.querySelector('.price-total')
@@ -177,12 +185,40 @@ let totalCard = 0;
 let countProduct = 0;
 
 //functions
+
 loadEventListenrs();
 function loadEventListenrs(){
     allContainerCart.addEventListener('click', addProduct);
 
     containerBuyCart.addEventListener('click', deleteProduct);
 }
+function getJsonData(){
+    var arr = [];
+    fetch("./prods.json")
+    .then(response => {
+        arr.push(response.json());
+    })
+    .then(jsondata => console.log(jsondata));
+    return arr
+}
+function addProducts (data){
+    const nodoProductos = document.getElementById("divProductos");
+    data.forEach(prod => {
+    const card = document.createElement("div");
+    card.setAttribute("class", "carts");
+    card.innerHTML = `
+
+                    <div>
+                        <img src="${prod.img}" alt="">
+                        <p><span>${prod.precio}</span>$</p>
+                    </div>
+                    <p class="title">${prod.title}</p>
+                    <a href="" data-id="${prod.id}" class="btn-add-cart">AGREGAR AL CARRITO</a>
+                     `;
+    nodoProductos.appendChild(card);
+    });
+}
+
 
 function addProduct(e){
     e.preventDefault();
@@ -268,5 +304,15 @@ function loadHtml(){
  function clearHtml(){
     containerBuyCart.innerHTML = '';
  }
-
-
+const $form = document.querySelector("#formulario")
+$form.addEventListener("submit",handlesubmit)
+function handlesubmit(event){
+    event.preventDefault()
+    const form = new FormData(this)
+    console.log(form.get("nombre"))
+}
+let boton = document.querySelectorAll(".ssss")
+boton.addEventListener("click", saludar)
+function saludar(){
+    Swal.fire('Any fool can use a computer')
+}

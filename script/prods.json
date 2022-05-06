@@ -1,0 +1,16 @@
+{
+    "productos" : [
+        {
+            "title" : "Procesador AMD RYZEN 7 3700X",
+            "precio": "45900",
+            "img":  "../images/rizen.jpg",
+            "id": "1"
+        },
+        {
+            "title" : "Procesador AMD RYZEN 7 3700X",
+            "precio": "45900",
+            "img":  "../images/rizen.jpg",
+            "id": "1"
+        }
+    ]
+}
