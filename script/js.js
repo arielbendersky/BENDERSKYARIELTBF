@@ -192,9 +192,9 @@ function loadEventListenrs(){
 
     containerBuyCart.addEventListener('click', deleteProduct);
 }
-function getJsonData(){
+/*function getJsonData(){
     var arr = [];
-    fetch("./prods.json")
+    fetch("../script")
     .then(response => {
         arr.push(response.json());
     })
@@ -219,7 +219,24 @@ function addProducts (data){
     });
 }
 
-
+*/
+var app ={};
+var micallback = datos =>{
+    console.log(datos);
+    app.productos=datos;
+    var html = ""
+    app.productos.map(prods =>{
+        html+="<div>"
+        html+="<img src='"+prods.img+"'></img>";
+        html+="<p'"+prods.precio+"'></p>";
+    for(let propiedad of Object.keys(prods)){
+            html+="<p> "+prods[propiedad]+ "<p>"
+        }
+    html+= "<a>AGREGAR AL CARRITO</a>"
+    html+="</div>"
+    }) 
+    document.getElementById("results").innerHTML=html;
+}
 function addProduct(e){
     e.preventDefault();
     if (e.target.classList.contains('btn-add-cart')) {

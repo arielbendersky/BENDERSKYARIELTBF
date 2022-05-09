@@ -1,16 +1,20 @@
-{
-    "productos" : [
-        {
-            "title" : "Procesador AMD RYZEN 7 3700X",
-            "precio": "45900",
-            "img":  "../images/rizen.jpg",
-            "id": "1"
-        },
-        {
-            "title" : "Procesador AMD RYZEN 7 3700X",
-            "precio": "45900",
-            "img":  "../images/rizen.jpg",
-            "id": "1"
-        }
-    ]
-}
+micallback([
+    {
+        "descipcion" :"Procesador AMD RYZEN 7 3700X",
+        "precio" : "45900",
+        "img":  "../images/rizen.jpg",
+        "id": "1"
+    },
+    {
+        "descipcion" :"Procesador Intel Core i7 9700F",
+        "precio" : "34800",
+        "img":  "../images/corei7.jpg",
+        "id": "2"
+    },
+    {
+        "descipcion" :"Procesador AMD Ryzen 5 1600",
+        "precio" : "29900",
+        "img":  "../images/ryzen5.jpg",
+        "id": "3"
+    },   
+])
