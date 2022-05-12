@@ -220,7 +220,7 @@ function addProducts (data){
 }
 
 */
-var app ={};
+/*var app ={};
 var micallback = datos =>{
     console.log(datos);
     app.productos=datos;
@@ -236,7 +236,7 @@ var micallback = datos =>{
     html+="</div>"
     }) 
     document.getElementById("results").innerHTML=html;
-}
+}*/
 function addProduct(e){
     e.preventDefault();
     if (e.target.classList.contains('btn-add-cart')) {
